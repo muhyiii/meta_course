@@ -1,44 +1,35 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react";
+// import Ilustration from "../assets/json/hgHn8cwvvy.json";
 import * as LottiePlayer from "@lottiefiles/lottie-player";
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <div className="flex items-center pt-12">
-        <div className="changa-one">
-          <h1 className="text-5xl w-2/3">MAKE US CLOSE TO ENGLISH</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
-            nostrum?
-          </p>
-          <div className="mt-5 space-x-5">
-            <button className="bg-gradient-to-r from-purple-500 to bg-pink-700 w-40 px-3 py-2 text-white rounded-full tracking-widest">
-              Get Started
-            </button>
-            <button className="border w-40  px-3 py-2 text-black  rounded-full tracking-widest">
-              Login
-            </button>
-          </div>
-        </div>
-        <div>
-          <lottie-player
-            style={{ width: "500px" }}
-            autoplay
-            loop
-            mode="normal"
-            src="https://assets1.lottiefiles.com/packages/lf20_ncpnijkz.json"
-          ></lottie-player>
+    <div className="w-full h-full flex justify-between items-center px-20">
+      <div className="left w-1/3">
+        <h1 className="text-6xl font-extrabold">MAKE US CLOSE TO ENGLISH</h1>
+        <p className="font-bold opacity-50 w-3/4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam culpa
+          illo nisi voluptas commodi alias.
+        </p>
+        <div className="flex gap-x-5 mt-5">
+          <button className="px-7 py-2 from-[#AD278F] bg-gradient-to-r to-[#8827AD] rounded-full font-bold text-white transition-all ">
+            Get started
+          </button>
+          <button className="px-10 py-2 border border-[#AD278F] rounded-full text-[#AD278F]">
+            Login
+          </button>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-purple-500 to bg-pink-700 py-2 text-white changa-one px-5 flex ">
-        LEARN ENGLISH WITH TECHNIQUES THAT ARE EASY TO UNDERSTAND
-        <div className="h-3 w-3 rounded-full bg-white"></div>
-        LEARN ENGLISH AT VARIOUS LEVELS
-        <div className="h-3 w-3 rounded-full bg-white"></div>
-        LEARN DIGITAL-BASED ENGLISH WITH AN ATTRACTIVE INTERFACE
+      <div className="right w-1/2 h-auto flex justify-end">
+        <lottie-player
+          style={{ width: "700px" }}
+          autoplay
+          loop
+          mode="normal"
+          
+          src="https://lottie.host/758bed1b-0033-4d0d-bbf4-ce1f36582033/hyjtd1IfuG.json"
+          background="transparent"
+        ></lottie-player>
       </div>
     </div>
   );
-};
-
-export default Home;
+}

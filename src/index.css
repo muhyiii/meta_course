@@ -9,6 +9,8 @@
 
 .changa-one {
     font-family: 'Changa One', cursive;
+    /* font-stretch: expanded  ; */
+    letter-spacing: 1px;
 }
 
 .changa {
